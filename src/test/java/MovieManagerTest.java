@@ -23,7 +23,7 @@ public class MovieManagerTest {
 
 
     @Test
-    public void limitTest() {
+    public void limitMoreTest() {
         MovieManager manager = new MovieManager(6);
 
         manager.add("film A");
