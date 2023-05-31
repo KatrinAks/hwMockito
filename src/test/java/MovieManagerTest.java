@@ -24,7 +24,7 @@ public class MovieManagerTest {
 
     @Test
     public void limitMoreTest() {
-        MovieManager manager = new MovieManager(6);
+        MovieManager manager = new MovieManager(5);
 
         manager.add("film A");
         manager.add("film B");
@@ -34,7 +34,7 @@ public class MovieManagerTest {
         manager.add("film F");
 
 
-        String[] expected = {"film F","film E", "film D", "film C", "film B", "film A"};
+        String[] expected = {"film F","film E", "film D", "film C", "film B"};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
